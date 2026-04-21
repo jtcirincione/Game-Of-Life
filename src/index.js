@@ -6,7 +6,7 @@ const random = document.getElementById("random");
 
 
 //config options
-const GRID_SIZE = 5;
+const GRID_SIZE = 1;
 let CELL_SIZE = 1;
 const UPDATE_INTERVAL = 2;
 let lastUpdateTime = performance.now();
@@ -87,7 +87,7 @@ startSim.addEventListener('click', (e) => {
     }
 });
 random.addEventListener('click', (e) => {
-    initializeArrays(.97)
+    candidates = initializeArrays(.95);
 });
 
 resetGame.addEventListener('click', (e) => {
